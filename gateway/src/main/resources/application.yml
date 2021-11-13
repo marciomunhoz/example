@@ -1,0 +1,22 @@
+micronaut:
+  application:
+    name: gateway
+  http:
+    client:
+      follow-redirects: false
+  server:
+    context-path: /api
+    port: 8081
+    cors:
+      enabled: true
+  security:
+    enabled: true
+    login:
+      enabled: false
+    logout:
+      enabled: false
+    authentication: cookie
+  endpoints:
+    health:
+      enabled: true
+      sensitive: false
